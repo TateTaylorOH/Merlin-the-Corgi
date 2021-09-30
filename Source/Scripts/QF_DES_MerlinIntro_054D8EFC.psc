@@ -2,9 +2,19 @@
 ;NEXT FRAGMENT INDEX 1
 Scriptname QF_DES_MerlinIntro_054D8EFC Extends Quest Hidden
 
+;BEGIN ALIAS PROPERTY NamelessMerlin
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_NamelessMerlin Auto
+;END ALIAS PROPERTY
+
 ;BEGIN ALIAS PROPERTY CarnageMarker
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_CarnageMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY MerlinForceGreet
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_MerlinForceGreet Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN FRAGMENT Fragment_0

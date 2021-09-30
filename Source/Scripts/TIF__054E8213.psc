@@ -6,13 +6,13 @@ Scriptname TIF__054E8213 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-(DES_MerlintheCorgi as DES_MerlinFollowerFramework).SetFollower(akSpeaker)
-akSpeaker.EvaluatePackage()
-GetOwningQuest().SetStage(10)
+NamelessMerlin.Clear()
+(MerlinForceGreet).ForceRefTo(akspeaker)
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
-Quest Property DES_MerlintheCorgi Auto
+ReferenceAlias property MerlinForceGreet auto
+ReferenceAlias property NamelessMerlin auto
