@@ -15,4 +15,4 @@ EndFunction
 
 ObjectReference Property HomeMarker  Auto  
 
-ObjectReference Property Player  Auto  
+ObjectReference Property Player Auto
