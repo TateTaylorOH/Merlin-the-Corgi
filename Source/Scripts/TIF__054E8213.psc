@@ -7,8 +7,11 @@ Function Fragment_2(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 GetOwningQuest().SetStage(5)
+akspeaker.PlaceAtMe(DES_SpellTomeSummonMerlin)
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
+
+Book Property DES_SpellTomeSummonMerlin auto

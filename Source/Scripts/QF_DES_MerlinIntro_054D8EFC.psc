@@ -2,38 +2,20 @@
 ;NEXT FRAGMENT INDEX 3
 Scriptname QF_DES_MerlinIntro_054D8EFC Extends Quest Hidden
 
-;BEGIN ALIAS PROPERTY MerlinForceGreet
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_MerlinForceGreet Auto
-;END ALIAS PROPERTY
-
 ;BEGIN ALIAS PROPERTY CarnageMarker
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_CarnageMarker Auto
+;END ALIAS PROPERTY
+
+;BEGIN ALIAS PROPERTY MerlinForceGreet
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_MerlinForceGreet Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN ALIAS PROPERTY MerlinNameless
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_MerlinNameless Auto
 ;END ALIAS PROPERTY
-
-;BEGIN FRAGMENT Fragment_1
-Function Fragment_1()
-;BEGIN CODE
-utility.wait(0.1)
-Game.DisablePlayerControls()
-utility.wait(0.1)
-Game.EnablePlayerControls()
-utility.wait(1)
-spelltomeref.enable()
-spelltomeref.moveto(Merlin, 0, 1, 0)
-Utility.Wait(1)
-(Alias_MerlinForceGreet).ForceRefTo(Merlin)
-Utility.Wait(1)
-Merlin.EvaluatePackage()
-;END CODE
-EndFunction
-;END FRAGMENT
 
 ;BEGIN FRAGMENT Fragment_0
 Function Fragment_0()
