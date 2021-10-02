@@ -1,7 +1,7 @@
 Scriptname DES_MerlinSpellTomeScript extends ObjectReference  
 
 EVENT OnInit()
-	moveto(PlayerRef, 30, 20, 2)
+	moveto(PlayerRef, 50, 50, 1)
 	placeatme(DES_SummonExplosion)
 	Utility.Wait(4)
 	(MerlinForceGreet).ForceRefTo(Merlin)
