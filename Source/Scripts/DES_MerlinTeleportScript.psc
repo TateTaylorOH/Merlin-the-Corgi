@@ -2,6 +2,7 @@ Scriptname DES_MerlinTeleportScript extends ObjectReference
 
 EVENT OnInit()
 
+	Merlin.Resurrect()
 	Utility.Wait(0.5)
 	Merlin.MoveTo(self)
 	(DES_MerlintheCorgi as DES_MerlinFollowerFramework).SetFollower(Merlin)
