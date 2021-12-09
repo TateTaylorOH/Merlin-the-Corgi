@@ -6,12 +6,24 @@ Spell[] Property CloakSpells auto
 EVENT OnCombatStateChanged(Actor akTarget, int aeCombatState)
 
 	IF (aeCombatState == 0)
-		UnequipAll()
-		RemoveAllItems()
-		DispelAllSpells()
+		Self.UnequipAll()
+		Self.RemoveItem(FireForm)
+		Self.RemoveItem(FrostForm)
+		Self.RemoveItem(ShockForm)
+		Self.DispelAllSpells()
 	ELSEIF(aeCombatState == 1)
-		StartCloak(akTarget)
+		Self.StartCloak(akTarget)
 	ENDIF
+	
+ENDEVENT
+
+EVENT OnLoad()
+
+	Self.UnequipAll()
+	Self.RemoveItem(FireForm)
+	Self.RemoveItem(FrostForm)
+	Self.RemoveItem(ShockForm)
+	Self.DispelAllSpells()
 	
 ENDEVENT
 
@@ -46,3 +58,6 @@ Function StartCloak(Actor akTarget)
 	EquipItem(ElementalSkins[element])
 EndFunction
 
+Armor Property FireForm auto
+Armor Property FrostForm auto
+Armor Property ShockForm auto
