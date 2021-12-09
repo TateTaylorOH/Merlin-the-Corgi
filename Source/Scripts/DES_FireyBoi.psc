@@ -7,9 +7,9 @@ EVENT OnCombatStateChanged(Actor akTarget, int aeCombatState)
 
 	IF (aeCombatState == 0)
 		Self.UnequipAll()
-		Self.RemoveItem(FireForm)
-		Self.RemoveItem(FrostForm)
-		Self.RemoveItem(ShockForm)
+		Self.RemoveItem(DES_SkinFireyMerlin)
+		Self.RemoveItem(DES_SkinFrostyMerlin)
+		Self.RemoveItem(DES_SkinShockingMerlin)
 		Self.DispelAllSpells()
 	ELSEIF(aeCombatState == 1)
 		Self.StartCloak(akTarget)
@@ -20,9 +20,9 @@ ENDEVENT
 EVENT OnLoad()
 
 	Self.UnequipAll()
-	Self.RemoveItem(FireForm)
-	Self.RemoveItem(FrostForm)
-	Self.RemoveItem(ShockForm)
+	Self.RemoveItem(DES_SkinFireyMerlin)
+	Self.RemoveItem(DES_SkinFrostyMerlin)
+	Self.RemoveItem(DES_SkinShockingMerlin)
 	Self.DispelAllSpells()
 	
 ENDEVENT
@@ -58,6 +58,6 @@ Function StartCloak(Actor akTarget)
 	EquipItem(ElementalSkins[element])
 EndFunction
 
-Armor Property FireForm auto
-Armor Property FrostForm auto
-Armor Property ShockForm auto
+Armor Property DES_SkinFireyMerlin auto
+Armor Property  DES_SkinFrostyMerlin auto
+Armor Property  DES_SkinShockingMerlin auto
