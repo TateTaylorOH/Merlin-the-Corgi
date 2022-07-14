@@ -11,18 +11,19 @@
 
 <br>
 <br>
+<br>
 
 [![Button Nexus]][Nexus]   [![Button XBox]][XBox]   [![Button Showcase]][Showcase]
 
 <br>
-<br>
-
 <br>
 <br>
 
 ![Label Features]
 
 </div>
+
+<br>
 
 -   Merlin the magical corgi follower.
 
@@ -45,14 +46,16 @@
 
 </div>
 
-**[Immersive Interactions﻿]** is supported out of the box <br>
+<br>
+
+**[Immersive Interactions]** is supported out of the box <br>
 without need of any patches or **MCM** configurations.
 
 <br>
 
 ### Follower Frameworks
 
-**Merlin** ﻿uses a custom follower framework and should <br>
+**Merlin** uses a custom follower framework and should <br>
 **not** be imported into other framework mods such as:
 
 -   **[Extensible Follower Framework]**
@@ -68,10 +71,13 @@ without need of any patches or **MCM** configurations.
 
 ![Label Mods]
 
-</div>
+<br>
 
 [![Gladys]][Gladys The Corgi]
 
+</div>
+
+<br>
 <br>
 <br>
 
@@ -107,7 +113,7 @@ For **redistribution** you will have to purchase it yourself.
 [Extensible Follower Framework]: https://www.nexusmods.com/skyrimspecialedition/mods/7003
 [Nether's Follower Framework]: https://www.nexusmods.com/skyrimspecialedition/mods/18076
 [Amazing Follower Tweaks]: https://www.nexusmods.com/skyrimspecialedition/mods/6656
-[Immersive Interactions﻿]: https://www.nexusmods.com/skyrimspecialedition/mods/47670
+[Immersive Interactions]: https://www.nexusmods.com/skyrimspecialedition/mods/47670
 [Nexus]: https://www.nexusmods.com/skyrimspecialedition/mods/56433
 
 
