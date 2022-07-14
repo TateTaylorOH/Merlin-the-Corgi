@@ -21,30 +21,24 @@
 
 ![Label Features]
 
-</div>
-
 <br>
 
--   Merlin the magical corgi follower.
+Merlin the magical corgi follower.
 
--   Unique model + armor to make him <br>
-    stand out from the rest of the dogs.
+Unique model + armor to make him <br>
+stand out from the rest of the dogs.
     
--   Merlin can choose the most effective <br>
-    magical form to dispatch his enemies.
+Merlin can choose the most effective <br>
+magical form to dispatch his enemies.
     
--   Tell Merlin where to live when dismissed.
+Tell Merlin where to live when dismissed.
 
--   Realistic sounds effects from my pet corgi!
+Realistic sounds effects from my pet corgi!
 
 <br>
 <br>
-
-<div align = center>
 
 ![Label Compatibility]
-
-</div>
 
 <br>
 
@@ -58,16 +52,14 @@ without need of any patches or **MCM** configurations.
 **Merlin** uses a custom follower framework and should <br>
 **not** be imported into other framework mods such as:
 
--   **[Extensible Follower Framework]**
+**[Extensible Follower Framework]**
 
--   **[Nether's Follower Framework]**
+**[Nether's Follower Framework]**
 
--   **[Amazing Follower Tweaks]**
+**[Amazing Follower Tweaks]**
 
 <br>
 <br>
-
-<div align = center>
 
 ![Label Mods]
 
