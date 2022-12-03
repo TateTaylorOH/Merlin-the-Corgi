@@ -6,11 +6,9 @@ Scriptname TIF__05539222 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-NamelessMerlin.Clear()
+getowningquest().setstage(8)
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
-
-referencealias property namelessmerlin auto

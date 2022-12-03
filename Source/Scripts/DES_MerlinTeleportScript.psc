@@ -5,8 +5,7 @@ EVENT OnInit()
 	Merlin.Resurrect()
 	Utility.Wait(0.5)
 	Merlin.MoveTo(self)
-	(DES_MerlintheCorgi as DES_MerlinFollowerFramework).SetFollower(Merlin)
-	(DES_MerlintheCorgi as  DES_MerlinFollowerFramework).FollowerFollow()
+	(DES_MerlinTheCorgi as PetFramework_PetQuest).FollowPlayer(Merlin)
 	Merlin.EvaluatePackage()
 	Disable()
 	Delete()
@@ -14,4 +13,4 @@ EVENT OnInit()
 ENDEVENT
 
 Actor Property Merlin Auto
-Quest Property DES_MerlintheCorgi auto
+Quest Property DES_MerlinTheCorgi Auto
