@@ -18,3 +18,4 @@ Actor Property Merlin  Auto
 Explosion Property DES_SummonExplosion  Auto  
 
 Actor Property PlayerRef auto
+

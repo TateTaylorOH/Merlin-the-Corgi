@@ -6,12 +6,8 @@ Spell[] Property CloakSpells auto
 EVENT OnCombatStateChanged(Actor akTarget, int aeCombatState)
 
 	IF (aeCombatState == 0)
-	Self.UnequipItem(DES_SkinFireyMerlin)
-	Self.UnequipItem(DES_SkinFrostyMerlin)
-	Self.UnequipItem(DES_SkinShockingMerlin)
-	Self.RemoveItem(DES_SkinFireyMerlin)
-	Self.RemoveItem(DES_SkinFrostyMerlin)
-	Self.RemoveItem(DES_SkinShockingMerlin)
+		Self.UnequipItem(ElementalSkins)
+		Self.RemoveItem(ElementalSkins)
 		Self.DispelAllSpells()
 	ELSEIF(aeCombatState == 1)
 		Self.StartCloak(akTarget)
@@ -21,12 +17,8 @@ ENDEVENT
 
 EVENT OnLoad()
 
-	Self.UnequipItem(DES_SkinFireyMerlin)
-	Self.UnequipItem(DES_SkinFrostyMerlin)
-	Self.UnequipItem(DES_SkinShockingMerlin)
-	Self.RemoveItem(DES_SkinFireyMerlin)
-	Self.RemoveItem(DES_SkinFrostyMerlin)
-	Self.RemoveItem(DES_SkinShockingMerlin)
+	Self.UnequipItem(ElementalSkins)
+	Self.RemoveItem(ElementalSkins)
 	Self.DispelAllSpells()
 	
 ENDEVENT

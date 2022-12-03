@@ -6,7 +6,7 @@ Scriptname TIF__0561CF3B Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-akspeaker.UnequipAll()
+akspeaker.UnequipItem(ElementalSkins)
 akspeaker.RemoveItem(ElementalSkins)
 ;END CODE
 EndFunction
