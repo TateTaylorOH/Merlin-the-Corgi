@@ -6,12 +6,12 @@ Scriptname TIF__0561CF3B Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-akspeaker.UnequipItem(ElementalSkins)
-akspeaker.RemoveItem(ElementalSkins)
+akspeaker.UnequipItem(DES_ElementalSkins)
+akspeaker.RemoveItem(DES_ElementalSkins)
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
-Armor[] Property ElementalSkins auto
+Formlist Property DES_ElementalSkins auto

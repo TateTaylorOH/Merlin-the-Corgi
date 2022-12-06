@@ -2,12 +2,13 @@ Scriptname DES_FireyBoi extends Actor
 
 Armor[] Property ElementalSkins auto
 Spell[] Property CloakSpells auto
+Formlist Property DES_ElementalSkins Auto
 
 EVENT OnCombatStateChanged(Actor akTarget, int aeCombatState)
 
 	IF (aeCombatState == 0)
-		Self.UnequipItem(ElementalSkins)
-		Self.RemoveItem(ElementalSkins)
+		Self.UnequipItem(DES_ElementalSkins)
+		Self.RemoveItem(DES_ElementalSkins)
 		Self.DispelAllSpells()
 	ELSEIF(aeCombatState == 1)
 		Self.StartCloak(akTarget)
@@ -17,8 +18,8 @@ ENDEVENT
 
 EVENT OnLoad()
 
-	Self.UnequipItem(ElementalSkins)
-	Self.RemoveItem(ElementalSkins)
+	Self.UnequipItem(DES_ElementalSkins)
+	Self.RemoveItem(DES_ElementalSkins)
 	Self.DispelAllSpells()
 	
 ENDEVENT
@@ -53,7 +54,3 @@ Function StartCloak(Actor akTarget)
 	CloakSpells[element].Cast(self)
 	EquipItem(ElementalSkins[element])
 EndFunction
-
-Armor Property DES_SkinFireyMerlin auto
-Armor Property  DES_SkinFrostyMerlin auto
-Armor Property  DES_SkinShockingMerlin auto
