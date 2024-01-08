@@ -2,7 +2,6 @@ Scriptname DES_MerlinTeleportScript extends ObjectReference
 
 EVENT OnInit()
 
-	Merlin.Resurrect()
 	Utility.Wait(0.5)
 	Merlin.MoveTo(self)
 	IF (Merlin.GetFactionRank(PetFramework_PetFollowingFaction) == 0)
