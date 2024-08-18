@@ -1,4 +1,4 @@
 {
-   "resistance": {"r&w":[],"kye2":[],"req":[],"vanilla":[]},
-   "weakness": {"r&w":[],"kye2":[],"req":[],"vanilla":[]}
+   "resistance": {"r&w":[],"kye2":[],"req":[],"vanilla":["fire","frost","shock"]},
+   "weakness": {"r&w":[],"kye2":[],"req":[],"vanilla":["fire","frost"]}
     }

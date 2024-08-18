@@ -1,5 +1,5 @@
  {
     "loot": [
-        ["dog meat","food"]
+        ["fire salts","ingredient"],["frost salts","ingredient"],["void salts","ingredient"]
       ]
    }
