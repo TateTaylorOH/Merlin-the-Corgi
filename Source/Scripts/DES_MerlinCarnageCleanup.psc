@@ -2,9 +2,8 @@ scriptName DES_MerlinCarnageCleanup extends ReferenceAlias
 
 ;-- Propeties ---------------------------------------
 
-location property EastEmpireDock auto
-quest property SellerQuest auto
-objectreference property Seller auto
+quest property DES_MerlinIntro auto
+objectreference property DES_DisableVigilants auto
 
 ;-- Variables ---------------------------------------
 
@@ -16,10 +15,8 @@ EndState
 
 State BoughtDog
     Event OnLocationChange(Location akOldLoc, Location akNewLoc)
-        if(akOldLoc.isSameLocation(EastEmpireDock) && !akNewLoc.isSameLocation(EastEmpireDock))
-            utility.Wait(600.0)
-            Seller.Disable()
-            SellerQuest.SetStage(255)
-        endif
+	utility.Wait(600.0)
+	DES_DisableVigilants.Disable()
+	DES_MerlinIntro.SetStage(255)
     EndEvent
 EndState
