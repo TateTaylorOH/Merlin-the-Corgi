@@ -7,19 +7,27 @@ Scriptname QF_DES_MerlinIntro_054D8EFC Extends Quest Hidden
 ReferenceAlias Property Alias_Player Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY Merlin
+;BEGIN ALIAS PROPERTY MerlinNameless
 ;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Merlin Auto
+ReferenceAlias Property Alias_MerlinNameless Auto
 ;END ALIAS PROPERTY
 
 ;BEGIN FRAGMENT Fragment_7
 Function Fragment_7()
 ;BEGIN CODE
-Alias_Merlin.GetActorReference().SetFactionRank(PetFramework_PetFaction, 1)
+Alias_MerlinNameless.GetActorReference().SetFactionRank(PetFramework_PetFaction, 1)
 DES_MerlinTheCorgi.Start()
-(DES_MerlinTheCorgi as PetFramework_PetQuest).FollowPlayer(Alias_Merlin)
-Alias_Merlin.trytoEvaluatePackage()
+(DES_MerlinTheCorgi as PetFramework_PetQuest).FollowPlayer(Alias_MerlinNameless)
+Alias_MerlinNameless.trytoEvaluatePackage()
 CleanupScript.GotoState("BoughtDog")
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_0
+Function Fragment_0()
+;BEGIN CODE
+stop()
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -39,15 +47,17 @@ Utility.Wait(3)
 EndFunction
 ;END FRAGMENT
 
-;BEGIN FRAGMENT Fragment_0
-Function Fragment_0()
+;BEGIN FRAGMENT Fragment_8
+Function Fragment_8()
 ;BEGIN CODE
-stop()
+;Alias_MerlinNameless.Clear()
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
+
+Actor Property Merlin  Auto  
 
 ObjectReference Property spelltomeref  Auto  
 
