@@ -1,8 +1,8 @@
-Scriptname DES_JaySerpaCompatibilityScript extends Quest  
+Scriptname DES_JSCompatibilityScript_Merlin extends Quest  
 
 ;-- Propeties ---------------------------------------
 
-ActorBase Property Gladys  Auto
+ActorBase Property DES_Merlin  Auto
 
 ;-- Variables ---------------------------------------
 
@@ -11,9 +11,9 @@ ActorBase Property Gladys  Auto
 Function IntJaySerpaCompatibility()
 ;Debug.Notification("IntJaySerpaCompatibility has fired!")
 FormList DogFormlist = Game.GetFormFromFile(0x013554F, "ImmersiveInteractions.esp") As FormList
-    if (DogFormlist && !DogFormlist.hasForm(Gladys))
-		DogFormlist.AddForm(Gladys)
-		;Debug.Notification("Gladys has been added to the formlist!")
+    if (DogFormlist && !DogFormlist.hasForm(DES_Merlin))
+		DogFormlist.AddForm(DES_Merlin)
+		;Debug.Notification("Merlin has been added to the formlist!")
     endif
 EndFunction
 
